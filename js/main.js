@@ -6,5 +6,6 @@
     contactBtn.click(function(e){
         e.preventDefault();
         $('html, body').animate({scrollTop: contact.offset().top}, 'slow');
+        ga('send', 'event', 'ContactButton', 'click');
     });
 })();
